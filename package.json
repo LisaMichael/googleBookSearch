@@ -1,0 +1,19 @@
+{
+  "name": "googlebooksearch",
+  "version": "1.0.0",
+  "description": "wk20 homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisaMichael/googleBookSearch.git"
+  },
+  "author": "Lisa Michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisaMichael/googleBookSearch/issues"
+  },
+  "homepage": "https://github.com/LisaMichael/googleBookSearch#readme"
+}
