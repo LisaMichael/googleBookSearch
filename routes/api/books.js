@@ -1,5 +1,3 @@
-// book.js api route code goes here
-
 const router = require("express").Router();
 const booksController = require("../../controllers/booksController");
 
