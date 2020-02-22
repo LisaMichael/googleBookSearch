@@ -13,20 +13,10 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 // Add routes, both API and view
- app.use(routes);
-
+app.use(routes);
 
 // Connect to the Mongo DB
-//https://stackoverflow.com/questions/50448272/ avoid-current-url-string-parser-is-deprecated-warning-by-setting-usenewurlpars
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/googlebooks", { useNewUrlParser: true, useUnifiedTopology: true})
-  .then(() => {
-    console.log("🗄 ==> Successfully connected to mongoDB.");
-  })
-  .catch((err) => {
-    console.log(`Error connecting to mongoDB: ${err}`);
-  });
-
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
 
 // Start the API server
 app.listen(PORT, function() {
