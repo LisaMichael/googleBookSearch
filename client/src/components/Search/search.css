@@ -1,0 +1,16 @@
+#results {
+    margin: 10px;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
