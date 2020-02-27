@@ -1,4 +1,5 @@
 import axios from "axios";
+import APIKEY from "../config/keys";
 
 export default {
   // Gets all books
@@ -16,5 +17,10 @@ export default {
   // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
+  },
+  searchBook: (query)=> {
+    console.log(query);
+    return axios.get(URL + query +APIKEY )
   }
+  
 };
