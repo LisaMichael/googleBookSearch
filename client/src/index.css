@@ -2,4 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
+  /*background image obtained from https://www.pexels.com/photo/defocused-image-of-lights-255379/ */
+  background-image:  url(./background.jpeg);
+  background-size: cover;
 }

@@ -14,7 +14,9 @@ class Detail extends Component {
     API.getBook(this.props.match.params.id)
       .then(res => this.setState({ book: res.data }))
       .catch(err => console.log(err));
+      
   }
+
 
   render() {
     return (
@@ -31,9 +33,10 @@ class Detail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
+              <h1>Description</h1>
               <p>
-                {this.state.book.synopsis}
+                {this.state.book.image}
+                {this.state.book.description}
               </p>
             </article>
           </Col>

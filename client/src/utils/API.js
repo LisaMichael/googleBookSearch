@@ -22,5 +22,5 @@ export default {
     console.log(query);
     return axios.get(URL + query +APIKEY )
   }
-  
+
 };
