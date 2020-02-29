@@ -60,6 +60,7 @@ class Books extends Component {
           <Col size="md-6">
             <Jumbotron>
               <h1>What Books Should I Read?</h1>
+              <h4>Add a Book to your Reading List</h4>
             </Jumbotron>
             <form>
               <Input
