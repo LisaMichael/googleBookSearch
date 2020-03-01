@@ -14,7 +14,7 @@ Search - User can search for books via the Google Books API and render them here
 Saved - Renders all books saved to the Mongo database. User has an option to "View" the book, bringing them to the book on Google Books, or "Delete" a book, removing it from the Mongo database.
 
 
-Start by using the 07-Ins_Mern example as a base for your application.
+
 
 Add code to connect to a MongoDB database named googlebooks using the mongoose npm package.
 
@@ -70,7 +70,21 @@ Say you have multiple browsers open, each one visiting your site. If you save an
 Socket.io NPM package
 
 
-Reminder: Submission on BCS
+# Working with volumes (https://developers.google.com/books/docs/v1/using)
+Performing a search
+You can perform a volumes search by sending an HTTP GET request to the following URI:
 
+https://www.googleapis.com/books/v1/volumes?q=search+terms
+
+This request has a single required parameter:
+
+q - Search for volumes that contain this text string. There are special keywords you can specify in the search terms to search in particular fields, such as:
+intitle: Returns results where the text following this keyword is found in the title.
+inauthor: Returns results where the text following this keyword is found in the author.
+inpublisher: Returns results where the text following this keyword is found in the publisher.
+subject: Returns results where the text following this keyword is listed in the category list of the volume.
+isbn: Returns results where the text following this keyword is the ISBN number.
+lccn: Returns results where the text following this keyword is the Library of Congress Control Number.
+oclc: Returns results where the text following this keyword is the Online Computer Library Center number.
 
 This assignment must be deployed. * Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!

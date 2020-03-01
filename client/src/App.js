@@ -5,7 +5,7 @@ import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Search from "./pages/Search";
-import Home from "./pages/home";
+
 
 function App() {
   return (

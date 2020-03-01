@@ -19,7 +19,7 @@ export default {
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
   },
-  searchBook: (query)=> {
+  searchBooks: (query)=> {
     console.log(query);
     return axios.get(URL + query +APIKEY )
   }
